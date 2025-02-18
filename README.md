@@ -77,21 +77,6 @@ In the deployment pipeline, ZenML's MLflow tracking integration is used for logg
 
 The MLflow deployment server runs locally as a daemon process that will continue to run in the background after the example execution is complete. When a new pipeline is run which produces a model that passes the accuracy threshold validation, the pipeline automatically updates the currently running MLflow deployment server to serve the new model instead of the old one.
 
-To round it off, we deploy a Streamlit application that consumes the latest model service asynchronously from the pipeline logic. This can be done easily with ZenML within the Streamlit code:
-
-```python
-service = prediction_service_loader(
-   pipeline_name="continuous_deployment_pipeline",
-   pipeline_step_name="mlflow_model_deployer_step",
-   running=False,
-)
-...
-service.predict(...)  # Predict on incoming data from the application
-```
-
-While this ZenML Project trains and deploys a model locally, other ZenML integrations such as the [Seldon](https://github.com/zenml-io/zenml/tree/main/examples/seldon_deployment) deployer can also be used in a similar manner to deploy the model in a more production setting (such as on a Kubernetes cluster). We use MLflow here for the convenience of its local deployment.
-
-![training_and_deployment_pipeline](_assets/training_and_deployment_pipeline_updated.png)
 
 ## :notebook: Diving into the code
 
