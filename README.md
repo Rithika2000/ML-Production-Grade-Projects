@@ -45,7 +45,7 @@ zenml stack register mlflow_stack -a default -o default -d mlflow -e mlflow_trac
 
 ## 📙 Resources & References
 
-Youtube link : [video](https://youtu.be/L3_pFTlF9EQ).
+Youtube link : Ayush Singh [video](https://youtu.be/L3_pFTlF9EQ).
 
 ## :thumbsup: The Solution
 
@@ -55,7 +55,7 @@ Instead, we are building an end-to-end pipeline for continuously predicting and 
 
 This pipeline can be deployed to the cloud, scale up according to our needs, and ensure that we track the parameters and data that flow through every pipeline that runs. It includes raw data input, features, results, the machine learning model and model parameters, and prediction outputs. ZenML helps us to build such a pipeline in a simple, yet powerful, way.
 
-In this Project, we give special consideration to the [MLflow integration](https://github.com/zenml-io/zenml/tree/main/examples) of ZenML. In particular, we utilize MLflow tracking to track our metrics and parameters, and MLflow deployment to deploy our model. We also use [Streamlit](https://streamlit.io/) to showcase how this model will be used in a real-world setting.
+In this Project, we give special consideration to the [MLflow integration](https://github.com/zenml-io/zenml/tree/main/examples) of ZenML. In particular, we utilize MLflow tracking to track our metrics and parameters, and MLflow deployment to deploy our model.
 
 ### Training Pipeline
 
