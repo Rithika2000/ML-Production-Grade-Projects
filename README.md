@@ -45,7 +45,7 @@ zenml stack register mlflow_stack -a default -o default -d mlflow -e mlflow_trac
 
 ## 📙 Resources & References
 
-Youtube link : Ayush Singh [video](https://youtu.be/L3_pFTlF9EQ).
+https://github.com/ayush714/customer-satisfaction-mlops
 
 ## :thumbsup: The Solution
 
